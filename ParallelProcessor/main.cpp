@@ -1,8 +1,10 @@
 ﻿#include <iostream>
+#include "FixThreadPool.h"
+
+
 
 
 int main()
 {
-	std::cout << "afsaf" << std::endl;
-	std::cout << "twice" << std::endl;
+	std::cout << "Hello, world!" << std::endl;
 }

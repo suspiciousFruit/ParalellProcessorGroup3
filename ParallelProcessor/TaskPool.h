@@ -10,5 +10,6 @@ public:
 	virtual Task* getTask() = 0; // Получить следующую задачу
 	virtual void setCompleted(Task*) = 0; // Сообщить TaskPool о том что задача выполнена
 	// Все представители исполнитей должны по окончанию выполнения задачи вызывать этот метод
-	virtual ~TaskPool() = 0;
+	virtual ~TaskPool()
+	{ }
 };

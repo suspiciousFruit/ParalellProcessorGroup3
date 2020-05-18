@@ -118,6 +118,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FixThreadPool.h" />
     <ClInclude Include="Task.h" />
     <ClInclude Include="TaskPool.h" />
     <ClInclude Include="ThreadPool.h" />
