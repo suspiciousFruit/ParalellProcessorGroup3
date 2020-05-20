@@ -35,5 +35,11 @@
     <ClInclude Include="FileToFileTask.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="FileTaskTypeParser.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="FolderTaskPool.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

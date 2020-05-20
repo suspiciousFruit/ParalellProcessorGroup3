@@ -7,7 +7,7 @@
 // Класс задач которые работают с двумя файлами
 class FileToFileTask : public Task
 {
-private:
+protected:
 	std::ifstream filein_; // Файл с заданием
 	std::ofstream fileout_; // Файл куда необходимо записать ответ
 public:

@@ -84,6 +84,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -118,8 +119,10 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FileTaskTypeParser.h" />
     <ClInclude Include="FileToFileTask.h" />
     <ClInclude Include="FixThreadPool.h" />
+    <ClInclude Include="FolderTaskPool.h" />
     <ClInclude Include="Task.h" />
     <ClInclude Include="TaskPool.h" />
     <ClInclude Include="ThreadPool.h" />
