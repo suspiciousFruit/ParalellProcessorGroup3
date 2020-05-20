@@ -123,6 +123,8 @@
     <ClInclude Include="FileToFileTask.h" />
     <ClInclude Include="FixThreadPool.h" />
     <ClInclude Include="FolderTaskPool.h" />
+    <ClInclude Include="GraphTask.h" />
+    <ClInclude Include="IntegrateTask1.h" />
     <ClInclude Include="Task.h" />
     <ClInclude Include="TaskPool.h" />
     <ClInclude Include="ThreadPool.h" />

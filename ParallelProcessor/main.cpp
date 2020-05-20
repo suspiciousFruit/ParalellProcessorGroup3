@@ -1,25 +1,27 @@
 ﻿#include <iostream>
 #include "FixThreadPool.h"
 #include <fstream>
-#include "FileTaskTypeParser.h"
+#include "FolderTaskPool.h"
+
+
+void process_function(ThreadPool* thread_pool, TaskPool* task_pool)
+{
+	if (thread_pool && task_pool)
+		thread_pool->processTasks(task_pool);
+}
+
+
 
 
 int main()
 {
-	FileTaskTypeParser type_parser;
-	std::ifstream file("file1.txt");
-	switch (type_parser.identify_type(std::ref(file)))
+	Task* task;
+	FolderTaskPool task_pool("source_folder", "destination_folder");
+	while (1)
 	{
-	case TaskType::Graph:
-		std::cout << "Graph";
-		break;
-	case TaskType::Integrate1:
-		std::cout << "Integrate1";
-		break;
-	case TaskType::Integrate2:
-		std::cout << "Integrate2";
-		break;
-	default:
-		std::cout << "Undef";
+		task = task_pool.getTask();
+		if (task == nullptr) break;
+		task->complete();
+		task_pool.setCompleted(task);
 	}
 }

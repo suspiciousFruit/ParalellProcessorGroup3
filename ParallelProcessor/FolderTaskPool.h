@@ -4,13 +4,18 @@
 #include <filesystem>
 #include <fstream>
 
+// Tasks
+#include "IntegrateTask1.h"
+#include "GraphTask.h"
+
+
 
 
 class FolderTaskPool : public TaskPool
 {
 private:
 	std::filesystem::directory_iterator current_entry_;
-	std::filesystem::path folder_out_path_;
+	const std::filesystem::path folder_out_path_;
 	FileTaskTypeParser type_parser_;
 	size_t task_number_;
 public:
@@ -19,7 +24,7 @@ public:
 	virtual Task* getTask() override;
 	virtual void setCompleted(Task*) override;
 private:
-	std::string generateName(size_t task_number);
+	std::wstring generateName(size_t task_number);
 };
 
 
@@ -47,21 +52,26 @@ Task* FolderTaskPool::getTask()
 			std::ifstream file(current_entry_->path());
 
 			TaskType::TaskType task_type = type_parser_.identify_type(std::ref(file));
+
 			if (task_type != TaskType::TaskType::UndefineType)
 			{
 				++task_number_;
+				std::filesystem::path file_out_name = folder_out_path_;
+				file_out_name /= generateName(task_number_);
+
 				switch (task_type)
 				{
 				case TaskType::Graph:
-					// task = new GraphTask(file, std::ostream( (folder_out_path_ /= generateName(task_number_)).c_str() );
+					task = new GraphTask(std::move(file), std::ofstream(file_out_name));
 					break;
 				case TaskType::Integrate1:
-					// task = new IntegrateTask1(file, std::ostream( (folder_out_path_ /= generateName(task_number_)).c_str() );
+					task = new IntegrateTask1(std::move(file), std::ofstream(file_out_name));
 					break;
 				case TaskType::Integrate2:
 					// task = new IntegrateTask2(file, std::ostream( (folder_out_path_ /= generateName(task_number_)).c_str() );
 					break;
 				default:
+					break;
 				}
 			}
 			++current_entry_; // Будет переписано более красиво
@@ -69,6 +79,8 @@ Task* FolderTaskPool::getTask()
 		}
 		++current_entry_;
 	}
+
+	return task;
 }
 
 void FolderTaskPool::setCompleted(Task* task)
@@ -76,7 +88,7 @@ void FolderTaskPool::setCompleted(Task* task)
 	delete task;
 }
 
-std::string FolderTaskPool::generateName(size_t task_number)
+std::wstring FolderTaskPool::generateName(size_t task_number)
 {
-	return std::string("result_" + std::to_string(task_number));
+	return std::wstring(L"result_" + std::to_wstring(task_number) + L".txt");
 }
