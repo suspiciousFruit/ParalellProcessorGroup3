@@ -13,6 +13,27 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Файлы заголовков\Task">
+      <UniqueIdentifier>{f4999b64-dc54-410e-84bd-417e59a669f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\ThreadPool">
+      <UniqueIdentifier>{b02b8100-5d46-4a81-aed7-e88860ac5116}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\TaskPool">
+      <UniqueIdentifier>{8fc0f5bf-5d2e-4b71-9bdf-e33957aa6806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Task\TaskLibrary">
+      <UniqueIdentifier>{8f2b82b4-1b6c-42fc-875b-535e0bccdcc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Task\AbstractTask">
+      <UniqueIdentifier>{ab537334-84e0-443e-9173-4213184df59f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Task\TaskLibrary\IntegrateTasks">
+      <UniqueIdentifier>{f9dee4d5-a9bc-40f6-931d-7b1dbdeaff90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\UserInterface">
+      <UniqueIdentifier>{049007b4-1711-4d56-ad13-d435a2b2f0df}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -20,32 +41,56 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Task.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="KeyValueParser.h">
+      <Filter>Файлы заголовков\Task\TaskLibrary\IntegrateTasks</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Файлы заголовков\Task\TaskLibrary\IntegrateTasks</Filter>
+    </ClInclude>
+    <ClInclude Include="RKIntegrator.h">
+      <Filter>Файлы заголовков\Task\TaskLibrary\IntegrateTasks</Filter>
+    </ClInclude>
+    <ClInclude Include="Ode.h">
+      <Filter>Файлы заголовков\Task\TaskLibrary\IntegrateTasks</Filter>
+    </ClInclude>
+    <ClInclude Include="IntegrateTask.h">
+      <Filter>Файлы заголовков\Task\TaskLibrary\IntegrateTasks</Filter>
+    </ClInclude>
+    <ClInclude Include="RKMethods.h">
+      <Filter>Файлы заголовков\Task\TaskLibrary\IntegrateTasks</Filter>
     </ClInclude>
     <ClInclude Include="ThreadPool.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="TaskPool.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Файлы заголовков\ThreadPool</Filter>
     </ClInclude>
     <ClInclude Include="FixThreadPool.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Файлы заголовков\ThreadPool</Filter>
     </ClInclude>
-    <ClInclude Include="FileToFileTask.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="FileTaskTypeParser.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="TaskPool.h">
+      <Filter>Файлы заголовков\TaskPool</Filter>
     </ClInclude>
     <ClInclude Include="FolderTaskPool.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Файлы заголовков\TaskPool</Filter>
     </ClInclude>
-    <ClInclude Include="IntegrateTask1.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="FileTaskTypeParser.h">
+      <Filter>Файлы заголовков\TaskPool</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskLibrary.h">
+      <Filter>Файлы заголовков\Task\TaskLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="Task.h">
+      <Filter>Файлы заголовков\Task\AbstractTask</Filter>
+    </ClInclude>
+    <ClInclude Include="FileToFileTask.h">
+      <Filter>Файлы заголовков\Task\AbstractTask</Filter>
+    </ClInclude>
+    <ClInclude Include="task_allocator.h">
+      <Filter>Файлы заголовков\Task\TaskLibrary</Filter>
     </ClInclude>
     <ClInclude Include="GraphTask.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Файлы заголовков\Task\TaskLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface.h">
+      <Filter>Файлы заголовков\UserInterface</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,1 +1,5 @@
-<Integrate1>
+<IntegrateDoublePendulum>
+iteration_number: 1000
+m: 100
+g: 1.1
+L: 20.3

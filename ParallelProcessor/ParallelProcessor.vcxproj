@@ -124,10 +124,18 @@
     <ClInclude Include="FixThreadPool.h" />
     <ClInclude Include="FolderTaskPool.h" />
     <ClInclude Include="GraphTask.h" />
-    <ClInclude Include="IntegrateTask1.h" />
+    <ClInclude Include="IntegrateTask.h" />
+    <ClInclude Include="KeyValueParser.h" />
+    <ClInclude Include="Ode.h" />
+    <ClInclude Include="RKIntegrator.h" />
+    <ClInclude Include="RKMethods.h" />
     <ClInclude Include="Task.h" />
+    <ClInclude Include="TaskLibrary.h" />
     <ClInclude Include="TaskPool.h" />
+    <ClInclude Include="task_allocator.h" />
     <ClInclude Include="ThreadPool.h" />
+    <ClInclude Include="UserInterface.h" />
+    <ClInclude Include="Vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

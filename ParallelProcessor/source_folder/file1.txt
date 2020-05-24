@@ -1,1 +1,5 @@
-<Graph>
+<IntegrateLorenzAttractor>
+x0: 10
+y0: 10
+z0: 10
+iteration_number: 20
