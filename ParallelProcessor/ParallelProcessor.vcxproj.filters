@@ -31,7 +31,7 @@
     <Filter Include="Файлы заголовков\Task\TaskLibrary\IntegrateTasks">
       <UniqueIdentifier>{f9dee4d5-a9bc-40f6-931d-7b1dbdeaff90}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы заголовков\UserInterface">
+    <Filter Include="Файлы заголовков\TestSystem">
       <UniqueIdentifier>{049007b4-1711-4d56-ad13-d435a2b2f0df}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -89,8 +89,8 @@
     <ClInclude Include="GraphTask.h">
       <Filter>Файлы заголовков\Task\TaskLibrary</Filter>
     </ClInclude>
-    <ClInclude Include="UserInterface.h">
-      <Filter>Файлы заголовков\UserInterface</Filter>
+    <ClInclude Include="TestSystem.h">
+      <Filter>Файлы заголовков\TestSystem</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,0 +1,5 @@
+<IntegrateLorenzAttractor>
+x0: 10
+y0: 17
+z0: 10
+iteration_number: 15000

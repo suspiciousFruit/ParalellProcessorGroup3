@@ -1,0 +1,9 @@
+<IntegrateDoublePendulum>
+iteration_number: 10000
+m: 100
+g: 9.1
+L: 20.3
+theta1: 1.35
+theta2: 0.3
+p1: 2.4
+p2: -5.65

@@ -18,6 +18,7 @@ public:
 		library_["IntegrateLorenzAttractor"] = new IntegrateLorenzAttractorAllocator();
 		// Идентификатор задачи
 		library_["IntegrateDoublePendulum"] = new IntegrateDoublePendulumAllocator();
+		// library_["myTaskIdentifcator"] = new MyTaskAllocator();
 	}
 
 	~TaskLibrary()
