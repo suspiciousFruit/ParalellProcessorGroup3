@@ -16,6 +16,7 @@ public:
 	}
 	virtual void complete() override{
 		fileout_ << "This is completed GraphTask" << endl;
+		readData();
 		djta(N, sv);
 	}
 	virtual ~GraphTask(){
